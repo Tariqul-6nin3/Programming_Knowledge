@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SideCart from "../SideCart/SideCart";
 import SingleBlog from "../SingleBlog/SingleBlog";
+import "./Blog.css";
 
 const Blog = () => {
   const [data, setData] = useState([]);
@@ -10,8 +11,8 @@ const Blog = () => {
       .then(data => setData(data));
   }, []);
   return (
-    <div className="flex justify-between">
-      <div className="w-full">
+    <div className="main-container">
+      <div>
         {" "}
         {data.map(singledata => (
           <SingleBlog singledata={singledata}></SingleBlog>
