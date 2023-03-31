@@ -5,8 +5,11 @@ import "./Blog.css";
 
 const Blog = () => {
   const [data, setData] = useState([]);
+  const [bookmarks, setBookmarks] = useState([]);
   const handleTitle = blogTitle => {
-    console.log(blogTitle);
+    if (!bookmarks.includes(blogTitle)) {
+      setBookmarks([...bookmarks, blogTitle.title]);
+    }
   };
   useEffect(() => {
     fetch("../../../public/fakedata/data.json")
@@ -16,15 +19,15 @@ const Blog = () => {
   return (
     <div className="main-container mt-6">
       <div>
-        {" "}
         {data.map(singledata => (
           <SingleBlog
+            key={singledata._id}
             singledata={singledata}
             handleTitle={handleTitle}></SingleBlog>
         ))}
       </div>
       <div>
-        <SideCart></SideCart>
+        <SideCart bookmarks={bookmarks}></SideCart>
       </div>
     </div>
   );
