@@ -44,8 +44,12 @@ const SingleBlog = props => {
         <p>{hashtag_first}</p>
         <p>{hashtag_second}</p>
       </div>
-      <div className="mb-6">
-        <a href="">Mark as read</a>
+      <div className="mt-2 mb-3">
+        <button
+          className="btn px-2"
+          onClick={() => props.handleReadingTime({ read_time })}>
+          Mark as read
+        </button>
       </div>
     </>
   );

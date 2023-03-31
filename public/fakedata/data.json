@@ -6,8 +6,9 @@
     "author_image": "https://i.postimg.cc/pXF3H4yr/Ellipse-1.png",
     "title": "How to get your first job as a self taught programmer",
     "published_date": "Mar 14",
+    "description": "In this blog, I share my personal experience on how I landed my first job as a self-taught programmer, and provide tips and advice for those who are also trying to break into the industry without a formal degree or education.",
     "picture": "https://i.postimg.cc/fykkh4GL/programming-background-collage.jpg",
-    "read_time": "4 min",
+    "read_time": "15 min",
     "hashtag_first": "#beginner",
     "hashtag_second": "#programming"
   },
@@ -18,8 +19,10 @@
     "author_image": "https://i.postimg.cc/6TJjq6T3/Ellipse-1-1.png",
     "title": "How can you survive in market place in this competitive world",
     "published_date": "April 15",
+    "description": "With the increasing competition in the job market, it can be challenging to stand out and secure a job. In this blog, I share my strategies and tips for surviving and thriving in the competitive world of programming.",
+
     "picture": "https://i.postimg.cc/MpJZ9jpX/programming-background-collage-1.jpg",
-    "read_time": "5 min",
+    "read_time": "14 min",
     "hashtag_first": "#survive",
     "hashtag_second": "#programming"
   },
@@ -30,6 +33,8 @@
     "author_image": "https://i.postimg.cc/pLkwG8pJ/Ellipse-1-2.png",
     "title": "Leading as a Junior developer first,then as a senior developer",
     "published_date": "June 5",
+    "description": "Becoming a successful developer requires not only technical skills, but also leadership and communication skills. In this blog, I share my journey from a junior developer to a senior developer and provide insights on how to lead effectively in a development team.",
+
     "picture": "https://i.postimg.cc/1R63wHyb/programming-background-with-person-working-with-codes-computer.jpg",
     "read_time": "12 min",
     "hashtag_first": "#developers",
@@ -42,6 +47,8 @@
     "author_image": "https://i.postimg.cc/vHsCGXnv/Ellipse-1-3.png",
     "title": "Be yourself , keep faith on you, oneday you will succeeded inshaallah",
     "published_date": "Aug 18",
+    "description": "Becoming a successful developer requires not only technical skills, but also leadership and communication skills. In this blog, I share my journey from a junior developer to a senior developer and provide insights on how to lead effectively in a development team.",
+
     "picture": "https://i.postimg.cc/TwdJgwD4/professional-programmer-working-late-dark-office.jpg",
     "read_time": "10 min",
     "hashtag_first": "#befaithful",

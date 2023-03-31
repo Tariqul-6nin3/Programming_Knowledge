@@ -6,10 +6,15 @@ import "./Blog.css";
 const Blog = () => {
   const [data, setData] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
+  const [readTime, setReadTime] = useState(0);
   const handleTitle = blogTitle => {
     if (!bookmarks.includes(blogTitle)) {
       setBookmarks([...bookmarks, blogTitle.title]);
     }
+  };
+
+  const handleReadingTime = time => {
+    setReadTime(time);
   };
   useEffect(() => {
     fetch("../../../public/fakedata/data.json")
@@ -17,17 +22,18 @@ const Blog = () => {
       .then(data => setData(data));
   }, []);
   return (
-    <div className="main-container mt-6">
+    <div className="main-container mt-6 max-w-7xl mx-auto">
       <div>
         {data.map(singledata => (
           <SingleBlog
             key={singledata._id}
             singledata={singledata}
-            handleTitle={handleTitle}></SingleBlog>
+            handleTitle={handleTitle}
+            handleReadingTime={handleReadingTime}></SingleBlog>
         ))}
       </div>
       <div>
-        <SideCart bookmarks={bookmarks}></SideCart>
+        <SideCart bookmarks={bookmarks} readTime={readTime}></SideCart>
       </div>
     </div>
   );
