@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SideCart from "../SideCart/SideCart";
 import SingleBlog from "../SingleBlog/SingleBlog";
-import "./Blog.css";
+// import "./Blog.css";
 
 const Blog = () => {
   const [data, setData] = useState([]);
@@ -14,16 +14,18 @@ const Blog = () => {
   };
 
   const handleReadingTime = time => {
-    setReadTime(time);
+    // console.log(time);
+    setReadTime(readTime + time);
   };
+
   useEffect(() => {
     fetch("../../../public/fakedata/data.json")
       .then(res => res.json())
       .then(data => setData(data));
   }, []);
   return (
-    <div className="main-container mt-6 max-w-7xl mx-auto">
-      <div>
+    <div className="main-container mt-6 w-11/12 md:w-full md:max-w-7xl mx-auto md:grid md:grid-cols-3">
+      <div className="md:col-span-2">
         {data.map(singledata => (
           <SingleBlog
             key={singledata._id}
@@ -32,7 +34,7 @@ const Blog = () => {
             handleReadingTime={handleReadingTime}></SingleBlog>
         ))}
       </div>
-      <div>
+      <div className=" md:col-span-1">
         <SideCart bookmarks={bookmarks} readTime={readTime}></SideCart>
       </div>
     </div>

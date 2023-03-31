@@ -7,7 +7,7 @@ const SideCart = props => {
       <h3 className="text-3xl font-bold text-blue-500">
         Spent time on read : {props.readTime}
       </h3>
-      <h3 className="text-3xl font-bold mt-3">
+      <h3 className="md:text-3xl text-2xl font-bold mt-3">
         Bookmarked Blogs :{props.bookmarks.length}
       </h3>
       {props.bookmarks.map(title => (

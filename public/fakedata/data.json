@@ -8,7 +8,7 @@
     "published_date": "Mar 14",
     "description": "In this blog, I share my personal experience on how I landed my first job as a self-taught programmer, and provide tips and advice for those who are also trying to break into the industry without a formal degree or education.",
     "picture": "https://i.postimg.cc/fykkh4GL/programming-background-collage.jpg",
-    "read_time": "15 min",
+    "read_time": 15,
     "hashtag_first": "#beginner",
     "hashtag_second": "#programming"
   },
@@ -22,7 +22,7 @@
     "description": "With the increasing competition in the job market, it can be challenging to stand out and secure a job. In this blog, I share my strategies and tips for surviving and thriving in the competitive world of programming.",
 
     "picture": "https://i.postimg.cc/MpJZ9jpX/programming-background-collage-1.jpg",
-    "read_time": "14 min",
+    "read_time": 14,
     "hashtag_first": "#survive",
     "hashtag_second": "#programming"
   },
@@ -36,7 +36,7 @@
     "description": "Becoming a successful developer requires not only technical skills, but also leadership and communication skills. In this blog, I share my journey from a junior developer to a senior developer and provide insights on how to lead effectively in a development team.",
 
     "picture": "https://i.postimg.cc/1R63wHyb/programming-background-with-person-working-with-codes-computer.jpg",
-    "read_time": "12 min",
+    "read_time": 12,
     "hashtag_first": "#developers",
     "hashtag_second": "#programming"
   },
@@ -50,7 +50,7 @@
     "description": "Becoming a successful developer requires not only technical skills, but also leadership and communication skills. In this blog, I share my journey from a junior developer to a senior developer and provide insights on how to lead effectively in a development team.",
 
     "picture": "https://i.postimg.cc/TwdJgwD4/professional-programmer-working-late-dark-office.jpg",
-    "read_time": "10 min",
+    "read_time": 10,
     "hashtag_first": "#befaithful",
     "hashtag_second": "#programming"
   }

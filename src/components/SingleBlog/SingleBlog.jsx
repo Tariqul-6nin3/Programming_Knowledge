@@ -14,11 +14,12 @@ const SingleBlog = props => {
     published_date,
     read_time,
   } = props.singledata;
-  console.log(props);
+  // console.log(props);
+  // console.log(read_time);
   return (
     <>
       <div className="image-container">
-        <img className="w-full h-96" src={picture} alt="" />
+        <img className="w-full h-72 md:h-96" src={picture} alt="" />
       </div>
       <div className="flex justify-between mt-5">
         <div className="flex gap-3">
@@ -47,7 +48,7 @@ const SingleBlog = props => {
       <div className="mt-2 mb-3">
         <button
           className="btn px-2"
-          onClick={() => props.handleReadingTime({ read_time })}>
+          onClick={() => props.handleReadingTime(read_time)}>
           Mark as read
         </button>
       </div>
