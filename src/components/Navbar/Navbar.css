@@ -1,0 +1,9 @@
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.menu-container li {
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}

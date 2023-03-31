@@ -1,13 +1,14 @@
 import React from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div>
+    <>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">Knowledge Cafe</a>
+          <a className="btn btn-ghost normal-case text-3xl">Knowledge Cafe</a>
         </div>
-        <ul>
+        <ul className="menu-container">
           <li>
             <a>Profile</a>
           </li>
@@ -24,7 +25,7 @@ const Navbar = () => {
           </div>
         </label>
       </div>
-    </div>
+    </>
   );
 };
 

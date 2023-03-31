@@ -14,7 +14,7 @@ const SingleBlog = props => {
     published_date,
     read_time,
   } = props.singledata;
-  console.log(props.singledata);
+  console.log(props);
   return (
     <>
       <div className="image-container">
@@ -31,7 +31,9 @@ const SingleBlog = props => {
         <div>
           <p>
             {read_time}
-            <span className="cursor-pointer text-xl ml-3">
+            <span
+              className="cursor-pointer text-xl ml-3"
+              onClick={() => props.handleTitle({ title })}>
               <FontAwesomeIcon icon={faBookmark} />
             </span>
           </p>
