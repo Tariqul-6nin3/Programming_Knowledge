@@ -3,7 +3,7 @@ import SideCart from "../SideCart/SideCart";
 import SingleBlog from "../SingleBlog/SingleBlog";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import "./Blog.css";
+
 
 const Blog = () => {
   const [data, setData] = useState([]);

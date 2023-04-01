@@ -1,12 +1,11 @@
 import React from "react";
-import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <>
-      <div className="sticky top-0 bg-base-100 flex justify-between px-10 py-6">
+      <div className="sticky top-0 bg-base-100 flex justify-between px-5 md:px-10 py-4 rounded-b-xl md:py-6">
         <div>
-          <h3 className="text-2xl font-bold md:text-4xl font-sans">
+          <h3 className="text-xl font-bold md:text-4xl font-sans">
             Programming <span>Knowledge</span>
           </h3>
         </div>
