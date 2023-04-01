@@ -8,8 +8,14 @@ const Blog = () => {
   const [bookmarks, setBookmarks] = useState([]);
   const [readTime, setReadTime] = useState(0);
   const handleTitle = blogTitle => {
-    if (!bookmarks.includes(blogTitle)) {
-      setBookmarks([...bookmarks, blogTitle.title]);
+    if (bookmarks.includes(blogTitle.title)) {
+      alert(`"${blogTitle.title}" is already bookmarked!`);
+      const newBookmarks = [...bookmarks, blogTitle.title];
+      setBookmarks(newBookmarks);
+    } else {
+      const newBookmarks = [...bookmarks, blogTitle.title];
+      setBookmarks(newBookmarks);
+      alert(`"${blogTitle.title}" has been added to bookmarks!`);
     }
   };
 
