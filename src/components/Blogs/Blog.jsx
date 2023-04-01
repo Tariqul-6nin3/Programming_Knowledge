@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import SideCart from "../SideCart/SideCart";
 import SingleBlog from "../SingleBlog/SingleBlog";
-import Swal from "sweetalert2";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // import "./Blog.css";
 
 const Blog = () => {
@@ -11,21 +11,13 @@ const Blog = () => {
   const [readTime, setReadTime] = useState(0);
   const handleTitle = blogTitle => {
     if (bookmarks.includes(blogTitle.title)) {
-      Swal.fire({
-        title: `"${blogTitle.title}" is already bookmarked!`,
-        icon: "warning",
-        confirmButtonText: "OK",
-      });
+      toast.warning("This blog is already bookmarked!");
       const newBookmarks = [...bookmarks, blogTitle.title];
       setBookmarks(newBookmarks);
     } else {
       const newBookmarks = [...bookmarks, blogTitle.title];
       setBookmarks(newBookmarks);
-      Swal.fire({
-        title: `"${blogTitle.title}" has been added to bookmarks!`,
-        icon: "success",
-        confirmButtonText: "OK",
-      });
+      toast.success(`This blog has been added to bookmarks!`);
     }
   };
 
@@ -40,20 +32,23 @@ const Blog = () => {
       .then(data => setData(data));
   }, []);
   return (
-    <div className="main-container mt-6 w-11/12 md:w-full md:max-w-7xl mx-auto md:grid md:grid-cols-3 gap-3">
-      <div className="md:col-span-2">
-        {data.map(singledata => (
-          <SingleBlog
-            key={singledata._id}
-            singledata={singledata}
-            handleTitle={handleTitle}
-            handleReadingTime={handleReadingTime}></SingleBlog>
-        ))}
+    <>
+      <ToastContainer></ToastContainer>
+      <div className="main-container mt-6 w-11/12 md:w-full md:max-w-7xl mx-auto md:grid md:grid-cols-3 gap-3">
+        <div className="md:col-span-2">
+          {data.map(singledata => (
+            <SingleBlog
+              key={singledata._id}
+              singledata={singledata}
+              handleTitle={handleTitle}
+              handleReadingTime={handleReadingTime}></SingleBlog>
+          ))}
+        </div>
+        <div className=" md:col-span-1">
+          <SideCart bookmarks={bookmarks} readTime={readTime}></SideCart>
+        </div>
       </div>
-      <div className=" md:col-span-1">
-        <SideCart bookmarks={bookmarks} readTime={readTime}></SideCart>
-      </div>
-    </div>
+    </>
   );
 };
 

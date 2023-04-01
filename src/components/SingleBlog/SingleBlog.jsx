@@ -42,7 +42,7 @@ const SingleBlog = props => {
           </p>
         </div>
       </div>
-      <h3 className="text-2xl font-bold px-3 mt-4">{title}</h3>
+      <h3 className="text-2xl font-bold px-1 md:px-3 mt-4">{title}</h3>
       <div className="flex gap-4 mt-3">
         <p>{hashtag_first}</p>
         <p>{hashtag_second}</p>
