@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-sans">
       <Navbar></Navbar>
       <Blog></Blog>
       <Faq></Faq>

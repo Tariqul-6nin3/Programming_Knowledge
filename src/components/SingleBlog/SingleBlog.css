@@ -1,4 +1,5 @@
 .image-container img {
   width: 845px;
   height: 450px;
+  border: 4px solid orange;
 }

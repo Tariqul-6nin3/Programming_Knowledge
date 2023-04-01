@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import SideCart from "../SideCart/SideCart";
 import SingleBlog from "../SingleBlog/SingleBlog";
+import Swal from "sweetalert2";
+
 // import "./Blog.css";
 
 const Blog = () => {
@@ -9,13 +11,21 @@ const Blog = () => {
   const [readTime, setReadTime] = useState(0);
   const handleTitle = blogTitle => {
     if (bookmarks.includes(blogTitle.title)) {
-      alert(`"${blogTitle.title}" is already bookmarked!`);
+      Swal.fire({
+        title: `"${blogTitle.title}" is already bookmarked!`,
+        icon: "warning",
+        confirmButtonText: "OK",
+      });
       const newBookmarks = [...bookmarks, blogTitle.title];
       setBookmarks(newBookmarks);
     } else {
       const newBookmarks = [...bookmarks, blogTitle.title];
       setBookmarks(newBookmarks);
-      alert(`"${blogTitle.title}" has been added to bookmarks!`);
+      Swal.fire({
+        title: `"${blogTitle.title}" has been added to bookmarks!`,
+        icon: "success",
+        confirmButtonText: "OK",
+      });
     }
   };
 

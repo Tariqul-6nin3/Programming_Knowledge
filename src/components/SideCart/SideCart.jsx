@@ -3,11 +3,11 @@ import React from "react";
 const SideCart = props => {
   console.log(props.readTime);
   return (
-    <div className="text-center">
-      <h3 className="text-3xl font-bold text-blue-500">
+    <div className="text-center mb-10 max-w-7xl mx-auto">
+      <h3 className="md:text-3xl text-2xl font-bold text-blue-500 italic">
         Spent time on read : {props.readTime}
       </h3>
-      <h3 className="md:text-3xl text-2xl font-bold mt-3">
+      <h3 className="md:text-3xl text-2xl font-bold mt-3 italic">
         Bookmarked Blogs :{props.bookmarks.length}
       </h3>
       {props.bookmarks.map(title => (
