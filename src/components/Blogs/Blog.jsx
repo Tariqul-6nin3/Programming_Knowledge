@@ -4,7 +4,6 @@ import SingleBlog from "../SingleBlog/SingleBlog";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
 const Blog = () => {
   const [data, setData] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
@@ -27,7 +26,7 @@ const Blog = () => {
   };
 
   useEffect(() => {
-    fetch("../../../public/fakedata/data.json")
+    fetch("data.json")
       .then(res => res.json())
       .then(data => setData(data));
   }, []);
