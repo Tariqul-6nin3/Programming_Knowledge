@@ -14,8 +14,6 @@ const SingleBlog = props => {
     published_date,
     read_time,
   } = props.singledata;
-  // console.log(props);
-  // console.log(read_time);
   return (
     <>
       <div className="image-container border-gray-600">

@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Blog = () => {
   const [data, setData] = useState([]);
+  console.log(data);
   const [bookmarks, setBookmarks] = useState([]);
   const [readTime, setReadTime] = useState(0);
   const handleTitle = blogTitle => {
