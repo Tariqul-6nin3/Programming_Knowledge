@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App font-sans">
       <Navbar></Navbar>
-      <Blog></Blog>
-      <Faq></Faq>
+      <div className=" bg-black max-w-7xl mx-auto px-6 py-6 rounded-xl">
+        <Blog></Blog>
+        <Faq></Faq>
+      </div>
     </div>
   );
 }

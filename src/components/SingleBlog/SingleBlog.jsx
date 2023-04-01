@@ -53,6 +53,7 @@ const SingleBlog = props => {
           onClick={() => props.handleReadingTime(read_time)}>
           Mark as read
         </p>
+        <hr className="mt-10 border-purple-700" />
       </div>
     </>
   );

@@ -40,7 +40,7 @@ const Blog = () => {
       .then(data => setData(data));
   }, []);
   return (
-    <div className="main-container mt-6 w-11/12 md:w-full md:max-w-7xl mx-auto md:grid md:grid-cols-3">
+    <div className="main-container mt-6 w-11/12 md:w-full md:max-w-7xl mx-auto md:grid md:grid-cols-3 gap-3">
       <div className="md:col-span-2">
         {data.map(singledata => (
           <SingleBlog
